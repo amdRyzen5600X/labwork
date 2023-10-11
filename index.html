@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Онлайн магазин</title>
+        <link rel="icon" type="image/x-icon" href="./assets/pngegg.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,8 +25,21 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
-                                    <li class="nav-item"><a class="nav-link active" href="#">Каталог</a></li>
-                                    <li class="nav-item"><a class="nav-link active" href="#footer">О нас</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Каталог
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="article1.html">AMI Paris</a></li>
+                                            <li><a class="dropdown-item" href="article2.html">Stone Island</a></li>
+                                            <li><a class="dropdown-item" href="article3.html">ENTIRE STUDIOS</a></li>
+                                            <li><a class="dropdown-item" href="article4.html">JIL Sander</a></li>
+                                            <li><a class="dropdown-item" href="article5.html">Heron Preston</a></li>
+                                            <li><a class="dropdown-item" href="article6.html">Rhude</a></li>
+                                            <li><a class="dropdown-item" href="article7.html">GALLERY DEPT.</a></li>
+                                            <li><a class="dropdown-item" href="article8.html">Casablanca</a></li>
+                                        </ul>
+                                    </li><li class="nav-item"><a class="nav-link active" href="#footer">О нас</a></li>
                                     <li class="nav-item"><a class="nav-link active" href="#footer">Контакты</a></li>
                                 </ul>
                             </div>
@@ -36,13 +50,13 @@
                         <a href="#" class="user-action"><img src="./assets/icons8-гость-мужчина-48.png" width="27px"height="auto" alt=""></a>
                         <a href="#" class="user-action"><img src="./assets/pngegg.png" alt="" width="30px" height="30px"></a>
                         <a href="#" class="user-action"><img src="./assets/icons8-языковой-навык-48.png" width="27px" height="auto" alt=""></a>
-                        
+
                     </div>
                 </div>
             </div>
-            
+
         </header>
-        
+
 
         <main class="container">
             <section class="products">
@@ -52,51 +66,51 @@
                     <img src="./assets/polo.webp" alt="Product 1">
                     <h2>AMI Paris</h2>
                     <p>футболка с вышитым логотипом</p>
-                    <button onclick="redirectToProductDetails('article1.html')">Купить</button>
+                    <button class="btn btn-primary" type="button" onclick="redirectToProductDetails('article1.html')">Купить</button>
                 </article>
 
                 <article class="product">
                     <img src="./assets/stone.webp" alt="Product 2">
                     <h2>Stone Island</h2>
                     <p>футболка с нашивкой Compass</p>
-                    <button onclick="redirectToProductDetails('article2.html')">Купить</button>
+                    <button class="btn btn-primary" type="button"  onclick="redirectToProductDetails('article2.html')">Купить</button>
                 </article>
 
                 <article class="product">
                     <img src="./assets/entire.jpg" alt="Product 2">
                     <h2>ENTIRE STUDIOS</h2>
                     <p>футболка Dart Tee из органического хлопка</p>
-                    <button onclick="redirectToProductDetails('article3.html')">Купить</button>
+                    <button class="btn btn-primary" type="button"  onclick="redirectToProductDetails('article3.html')">Купить</button>
                 </article>
                 <article class="product">
                     <img src="./assets/jilsander.webp" alt="Product 2">
                     <h2>Jil Sander</h2>
                     <p>футболка с логотипом</p>
-                    <button onclick="redirectToProductDetails('article4.html')">Купить</button>
+                    <button class="btn btn-primary" type="button"  onclick="redirectToProductDetails('article4.html')">Купить</button>
                 </article>
                 <article class="product">
                     <img src="./assets/heron.webp" alt="Product 2">
                     <h2>Heron Preston</h2>
                     <p>футболка Heron с принтом</p>
-                    <button onclick="redirectToProductDetails('article5.html')">Купить</button>
+                    <button class="btn btn-primary" type="button"  onclick="redirectToProductDetails('article5.html')">Купить</button>
                 </article>
                 <article class="product">
                     <img src="./assets/rhude.webp" alt="Product 2">
                     <h2>Rhude</h2>
                     <p>футболка с логотипом</p>
-                    <button onclick="redirectToProductDetails('article6.html')">Купить</button>
+                    <button class="btn btn-primary" type="button"  onclick="redirectToProductDetails('article6.html')">Купить</button>
                 </article>
                 <article class="product">
                     <img src="./assets/gallery.webp" alt="Product 2">
                     <h2>GALLERY DEPT.</h2>
                     <p>футболка Body Cocktails с логотипом</p>
-                    <button onclick="redirectToProductDetails('article7.html')">Купить</button>
+                    <button class="btn btn-primary" type="button"  onclick="redirectToProductDetails('article7.html')">Купить</button>
                 </article>
                 <article class="product">
                     <img src="./assets/far.webp" alt="Product 2">
                     <h2>Casablanca</h2>
                     <p>шелковая рубашка Morning City View</p>
-                    <button onclick="redirectToProductDetails('article8.html')">Купить</button>
+                    <button class="btn btn-primary" type="button"  onclick="redirectToProductDetails('article8.html')">Купить</button>
                 </article>
             </section>
         </main>
@@ -106,9 +120,9 @@
                 <p>&copy; 2023 Онлайн магазин вещей</p>
                 <div class="contact">
                     <h2>Контакты</h2>
-                <p>Телефон: +77471133563</p>
-                <p>Email: 220538@astanait.edu.kz</p>
-                <p>Адрес: Казахстан, Астана</p>
+                    <p>Телефон: +77471133563</p>
+                    <p>Email: 220538@astanait.edu.kz</p>
+                    <p>Адрес: Казахстан, Астана</p>
                 </div>
                 <div class="aboutus">
                     <h2>О нас</h2>
@@ -118,9 +132,9 @@
             </div>
         </footer>
         <script>
-            function redirectToProductDetails(productPage) {
-                window.location.href = productPage;
-            }
+        function redirectToProductDetails(productPage) {
+            window.location.href = productPage;
+        }
         </script>
     </body>
 </html>
