@@ -4,11 +4,123 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
-    
+        <header>
+            <div class="container">
+                <div class="header-left">
+                    <h1>Добро пожаловать в наш магазин</h1>
+                </div>
+                <div class="header-right">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="#">Каталог</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="#footer">О нас</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="#footer">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="user-actions">
+                        <a href="#" class="user-action"><img src="./assets/icons8-сердце-48.png" width="27px"height="auto" alt=""></a>
+                        <a href="#" class="user-action"><img src="./assets/icons8-гость-мужчина-48.png" width="27px"height="auto" alt=""></a>
+                        <a href="#" class="user-action"><img src="./assets/pngegg.png" alt="" width="30px" height="30px"></a>
+                        <a href="#" class="user-action"><img src="./assets/icons8-языковой-навык-48.png" width="27px" height="auto" alt=""></a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        
+
+        <main class="container">
+            <section class="products">
+                <article class="product">
+                    <div class="product-header">
+                    </div>
+                    <img src="./assets/polo.webp" alt="Product 1">
+                    <h2>AMI Paris</h2>
+                    <p>футболка с вышитым логотипом</p>
+                    <button onclick="redirectToProductDetails('article1.html')">Купить</button>
+                </article>
+
+                <article class="product">
+                    <img src="./assets/stone.webp" alt="Product 2">
+                    <h2>Stone Island</h2>
+                    <p>футболка с нашивкой Compass</p>
+                    <button onclick="redirectToProductDetails('article2.html')">Купить</button>
+                </article>
+
+                <article class="product">
+                    <img src="./assets/entire.jpg" alt="Product 2">
+                    <h2>ENTIRE STUDIOS</h2>
+                    <p>футболка Dart Tee из органического хлопка</p>
+                    <button onclick="redirectToProductDetails('article3.html')">Купить</button>
+                </article>
+                <article class="product">
+                    <img src="./assets/jilsander.webp" alt="Product 2">
+                    <h2>Jil Sander</h2>
+                    <p>футболка с логотипом</p>
+                    <button onclick="redirectToProductDetails('article4.html')">Купить</button>
+                </article>
+                <article class="product">
+                    <img src="./assets/heron.webp" alt="Product 2">
+                    <h2>Heron Preston</h2>
+                    <p>футболка Heron с принтом</p>
+                    <button onclick="redirectToProductDetails('article5.html')">Купить</button>
+                </article>
+                <article class="product">
+                    <img src="./assets/rhude.webp" alt="Product 2">
+                    <h2>Rhude</h2>
+                    <p>футболка с логотипом</p>
+                    <button onclick="redirectToProductDetails('article6.html')">Купить</button>
+                </article>
+                <article class="product">
+                    <img src="./assets/gallery.webp" alt="Product 2">
+                    <h2>GALLERY DEPT.</h2>
+                    <p>футболка Body Cocktails с логотипом</p>
+                    <button onclick="redirectToProductDetails('article7.html')">Купить</button>
+                </article>
+                <article class="product">
+                    <img src="./assets/far.webp" alt="Product 2">
+                    <h2>Casablanca</h2>
+                    <p>шелковая рубашка Morning City View</p>
+                    <button onclick="redirectToProductDetails('article8.html')">Купить</button>
+                </article>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="container">
+                <p>&copy; 2023 Онлайн магазин вещей</p>
+                <div class="contact">
+                    <h2>Контакты</h2>
+                <p>Телефон: +77471133563</p>
+                <p>Email: 220538@astanait.edu.kz</p>
+                <p>Адрес: Казахстан, Астана</p>
+                </div>
+                <div class="aboutus">
+                    <h2>О нас</h2>
+                    <p>Мы - магазин модной одежды "Online-Shop by AMD RYZEN 5 7600X AM5 OEM". Мы предлагаем качественные товары по доступным ценам.</p>
+                    <p>Наша цель - сделать вашу жизнь стильной и комфортной.</p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function redirectToProductDetails(productPage) {
+                window.location.href = productPage;
+            }
+        </script>
     </body>
 </html>
